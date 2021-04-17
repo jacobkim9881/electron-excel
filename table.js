@@ -1,5 +1,6 @@
 const readXlsxFile = require('read-excel-file/node');
 const path = require('path')
+
 window.addEventListener('DOMContentLoaded', () => {
   let test = document.getElementById('test');
   let ePath = path.join(__dirname, '/asset/table.xlsx');	
@@ -44,6 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
           row.appendChild(aCell);	  
 	  }
     }
+
     test.appendChild(row);	  
   }
   })
